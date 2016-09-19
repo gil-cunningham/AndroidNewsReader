@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+    </style>
+
+    <!-- Splash -->
+    <style name="SplashThemeText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/splash_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <!-- Headlines AppBar -->
+    <style name="HeadlinesToolbar">
+        <item name="android:background">@color/headlines_toolbar_bg</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="HeadlinesToolbarSearchView">
+        <item name="android:background">@color/headlines_toolbar_search_bg</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">56dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/headlines_toolbar_search_text</item>
+        <item name="android:textColorHint">@color/headlines_toolbar_search_text_hint</item>
+    </style>
+
+    <style name="HeadlinesToolbarCloseSearch">
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">-58dp</item>
+    </style>
+
+    <style name="HeadlinesTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/headlines_tabs_bg</item>
+        <item name="tabIndicatorColor">@color/headlines_tabs_indicator</item>
+        <item name="tabSelectedTextColor">@color/headlines_tabs_selected_text</item>
+    </style>
+
+    <style name="HeadlinesTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/headlines_tabs_unselected_text</item>
+    </style>
+
+    <!-- Headline Cardview -->
+    <style name="HeadlineCardviewContainer">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+    </style>
+
+    <style name="HeadlineCardviewText">
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/headlines_cardview_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="HeadlineCardviewDate">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/headlines_cardview_date_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HeadlineCardviewLikesComments">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:textColor">@color/headlines_cardview_comments_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Article Details -->
+    <style name="ArticleDetailsHeader">
+        <item name="android:layout_marginBottom">-62dp</item>
+        <item name="android:layout_marginLeft">-76dp</item>
+        <item name="android:layout_marginTop">-62dp</item>
+        <item name="android:background">@color/article_details_header_bg</item>
+        <item name="android:scaleType">fitStart</item>
+    </style>
+
+    <style name="ArticleDetailsAuthorDate">
+        <item name="android:textColor">@color/article_details_authordate_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="ArticelDetailsContent">
+        <item name="android:background">@color/article_details_content_bg</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:textColor">@color/article_details_content_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ArticleDetailsErrorLoading">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:textColor">@color/article_details_error_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ArticleDetailsToolbar">
+        <item name="android:background">@color/article_details_toolbar_bg</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="ArticleDetailsToolbarImage">
+        <item name="android:layout_marginLeft">-76dp</item>
+        <item name="android:layout_marginTop">-62dp</item>
+        <item name="android:scaleType">fitStart</item>
+    </style>
+
+    <style name="ArticleDetailsToolbarBack">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="ArticleDetailsToolbarHeader">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/article_details_toolbar_text</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

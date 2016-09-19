@@ -1,0 +1,91 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headline_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_height">
+
+        <ImageView
+            android:id="@+id/headline_category_img"
+            android:layout_width="@dimen/cardview_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_sports" />
+
+        <RelativeLayout
+            android:id="@+id/headline_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/headline_category_img"
+            style="@style/HeadlineCardviewContainer" >
+
+            <TextView
+                android:id="@+id/headline_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HeadlineCardviewText" />
+
+            <TextView
+                android:id="@+id/headline_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headline_text"
+                style="@style/HeadlineCardviewDate" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/headline_text"
+                android:layout_toRightOf="@id/headline_date">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/headline_number_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        style="@style/HeadlineCardviewLikesComments" />
+
+                    <ImageView
+                        android:id="@+id/headline_likes_img"
+                        android:layout_width="14dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/likes_heart_empty_small"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/headline_number_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        style="@style/HeadlineCardviewLikesComments" />
+
+                    <ImageView
+                        android:id="@+id/headline_comments_img"
+                        android:layout_width="14dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/comments_empty_small" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

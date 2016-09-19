@@ -1,0 +1,73 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone"
+            style="@style/HeadlinesToolbar" >
+
+            <RelativeLayout
+                android:id="@+id/search_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:hint="@string/search_articles_hint"
+                    style="@style/HeadlinesToolbarSearchView" />
+
+                <ImageView
+                    android:id="@+id/clear_search_btn"
+                    android:src="@drawable/ic_clear_search_form"
+                    android:clickable="true"
+                    android:layout_toRightOf="@id/search_view"
+                    android:layout_centerVertical="true"
+                    style="@style/HeadlinesToolbarCloseSearch" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/HeadlinesTabLayout"
+            app:tabTextAppearance="@style/HeadlinesTabTextAppearance" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.gilcunningham.androidnewsreader.view.NewsReaderViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/headlines_fab"
+        android:layout_width="@dimen/design_fab_image_size"
+        android:layout_height="@dimen/design_fab_image_size"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        src="@drawable/ic_search"
+        android:scaleType="fitXY"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

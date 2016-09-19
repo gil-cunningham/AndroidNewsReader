@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Android News Reader</string>
+
+    <!-- app loading screen -->
+
+    <string name="splash_display_text">Android News Reader</string>
+    <string name="by_author">by:</string>
+
+    <!-- Article Details -->
+    <string name="article_details_error_loading"><u>Error Loading: Click to Refresh</u></string>
+
+    <!-- Headlines -->
+    <string name="search_articles_hint">SEARCH ARTICLES</string>
+    <string name="author_unknown">Unknown</string>
+    <string name="tab_articles">ARTICLES</string>
+    <string name="tab_categories">CATEGORIES</string>
+    <string name="tab_settings">SETTINGS</string>
+
+    <!-- Categories -->
+    <string name="categories_to_do">Categories: TO DO</string>
+
+    <!-- Settings -->
+    <string name="settings_to_do">Settings: TO DO</string>
+
+    <string-array name="section_name_arts">
+        <item>Arts</item>
+        <item>Fashion &amp; Style</item>
+        <item>Style</item>
+        <item>Theater</item>
+    </string-array>
+
+    <string-array name="section_name_business">
+        <item>Business</item>
+        <item>Business Day</item>
+        <item>Your Money</item>
+    </string-array>
+
+    <string-array name="section_name_games">
+        <item>Crosswords &amp; Games</item>
+        <item>Crosswords/Games</item>
+    </string-array>
+
+    <string-array name="section_name_health">
+        <item>Health</item>
+    </string-array>
+
+    <string-array name="section_name_music">
+        <item>Music</item>
+    </string-array>
+
+    <string-array name="section_name_politics">
+        <item>U.S.</item>
+        <item>Washington</item>
+    </string-array>
+
+    <string-array name="section_name_science">
+        <item>Science</item>
+        <item>Technology</item>
+    </string-array>
+
+    <string-array name="section_name_sports">
+        <item>Olympics</item>
+        <item>Sports</item>
+    </string-array>
+
+    <string-array name="section_name_world">
+        <item>World</item>
+        <item>International Home</item>
+    </string-array>
+
+    <string-array name="rest_query_filter">
+        <item>headline</item>
+        <item>pub_date</item>
+        <item>section_name</item>
+        <item>multimedia</item>
+        <item>web_url</item>
+        <item>byline</item>
+    </string-array>
+
+</resources>

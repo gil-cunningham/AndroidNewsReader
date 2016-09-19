@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Splash -->
+    <color name="splash_bg">#E7EDF3</color>
+    <color name="splash_text">#505050</color>
+
+    <!-- Headlines -->
+    <color name="headlines_toolbar_bg">#EAF0F5</color>
+    <color name="headlines_toolbar_search_bg">#FFFFFF</color>
+    <color name="headlines_toolbar_search_text">#A0A0A0</color>
+    <color name="headlines_toolbar_search_text_hint">#A0A0A0</color>
+
+    <color name="headlines_tabs_bg">#EAF0F5</color>
+    <color name="headlines_tabs_indicator">#2E96EF</color>
+    <color name="headlines_tabs_selected_text">#2E96EF</color>
+    <color name="headlines_tabs_unselected_text">#ABB9CB</color>
+
+    <color name="headlines_cardview_text">#989898</color>
+    <color name="headlines_cardview_date_text">#B8B8B8</color>
+    <color name="headlines_cardview_comments_text">#B8B8B8</color>
+
+    <!-- Articles Details -->
+    <color name="article_details_header_bg">#2E96EF</color>
+    <color name="article_details_authordate_text">#B8B8B8</color>
+    <color name="article_details_content_bg">#FFFFFF</color>
+    <color name="article_details_content_text">#989898</color>
+    <color name="article_details_error_text">#EE9898</color>
+
+    <color name="article_details_toolbar_bg">#2E96EF</color>
+    <color name="article_details_toolbar_text">#FFFFFF</color>
+
+</resources>
