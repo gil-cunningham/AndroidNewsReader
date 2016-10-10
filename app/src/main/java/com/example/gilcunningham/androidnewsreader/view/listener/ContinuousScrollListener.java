@@ -12,7 +12,7 @@ public abstract class ContinuousScrollListener extends RecyclerView.OnScrollList
 
     public static String TAG = ContinuousScrollListener.class.getSimpleName();
 
-    private int mPreviousTotal = 0; // The total number of items in the dataset after the last load
+    private int mPreviousItemCount = 0; // The total number of items in the dataset after the last load
     private boolean mLoading = true; // True if we are still waiting for the last set of data to load.
     private int mVisibleThreshold = 3; // The minimum amount of items to have below your current scroll position before loading more.
     int mFirstVisibleItem, mVisibleItemCount, mTotalItemCount;
@@ -37,7 +37,7 @@ public abstract class ContinuousScrollListener extends RecyclerView.OnScrollList
     /** reset scroll listener to original values **/
     public void reset() {
         mCurrentPage = 1;
-        mPreviousTotal = 0;
+        mPreviousItemCount = 0;
         mLoading = true;
     }
 
@@ -50,9 +50,9 @@ public abstract class ContinuousScrollListener extends RecyclerView.OnScrollList
         mFirstVisibleItem = mLinearLayoutManager.findFirstVisibleItemPosition();
 
         if (mLoading) {
-            if (mTotalItemCount > mPreviousTotal) {
+            if (mTotalItemCount > mPreviousItemCount) {
                 mLoading = false;
-                mPreviousTotal = mTotalItemCount;
+                mPreviousItemCount = mTotalItemCount;
             }
         }
         if (!mLoading && (mTotalItemCount - mVisibleItemCount)
